@@ -1,6 +1,27 @@
 ### GET ALL ITEMS
+
 GET http://localhost:5000/items HTTP/1.1
 
 ### GET ITEM BY ID
 
-GET http://localhost:5000/items/4 HTTP/1.1
+GET http://localhost:5000/items/abecf348-5f0e-45e4-bba8-d402a86219dd HTTP/1.1
+
+### ADD ITEM
+POST http://localhost:5000/items HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"New Post"
+}
+
+### REMOVE ITEM
+DELETE http://localhost:5000/items/1 HTTP/1.1
+
+### UPDATE ITEM
+
+PUT http://localhost:5000/items/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Item Updated"
+}
