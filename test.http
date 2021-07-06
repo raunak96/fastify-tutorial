@@ -1,0 +1,6 @@
+### GET ALL ITEMS
+GET http://localhost:5000/items HTTP/1.1
+
+### GET ITEM BY ID
+
+GET http://localhost:5000/items/4 HTTP/1.1
